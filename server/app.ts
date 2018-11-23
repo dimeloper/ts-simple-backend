@@ -1,4 +1,5 @@
 import express from 'express';
+import HealthController from './controllers/health.controller';
 /**
  * The server.
  *
@@ -53,7 +54,7 @@ export class App {
    * @method api
    */
   public routes(): void {
-    console.log('create router');
+    this.app.use('/health', HealthController.routes());
   }
 }
 

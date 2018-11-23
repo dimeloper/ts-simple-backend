@@ -1,3 +1,4 @@
+// can't be used for now due to https://github.com/remy/nodemon/issues/1025
 {
   "verbose": false,
   "ignore": [".git", "node_modules/**/node_modules", "test/**/*.spec.ts"],
@@ -7,5 +8,7 @@
     "PORT": "4000"
   },
   "ext": "ts",
+  "delay": "1500ms",
+  "signal": "SIGHUP",
   "exec": "ts-node ./server.ts"
 }
