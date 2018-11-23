@@ -1,5 +1,5 @@
 node_modules
-app/build
-app/server/*.js
-app/server/**/*.js
+build
+server/*.js
+server/**/*.js
 package-lock.json
