@@ -16,3 +16,11 @@ The nodemon watcher can't be used as standalone for now due to https://github.co
 ### Linting your files
 
 - yarn tslint
+
+### Running your unit tests
+
+- yarn test
+
+Or you can inspect them in a browser window by running:
+
+- yarn:test:inspect
