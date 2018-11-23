@@ -19,6 +19,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.16.4",
+    "mockgoose-fix": "^7.3.6",
     "mongoose": "^5.3.13",
     "tslint": "^5.11.0",
     "typescript": "^3.1.6"
