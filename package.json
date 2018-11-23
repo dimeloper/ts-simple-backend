@@ -2,7 +2,17 @@
   "name": "ts-backend-sample",
   "version": "1.0.0",
   "description": "A simple API built with TS.",
-  "main": "index.js",
+  "main": "./build/server.js",
+  "scripts": {
+    "start:dev": "nodemon ./build/server.js",
+    "start": "NODE_ENV=production node ./build/server.js",
+    "tsc": "tsc",
+    "test": "mocha --exit",
+    "test:inspect": "mocha --inspect-brk",
+    "ts-dev": "NODE_ENV=development ts-node ./server.ts",
+    "prod": "yarn tslint && yarn tsc && yarn test",
+    "tslint": "tslint server/**/**/*.ts"
+  },
   "author": "dimitris.kir <dimitrios.kiriakakis@esailors.de>",
   "license": "MIT",
   "dependencies": {
