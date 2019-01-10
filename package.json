@@ -4,7 +4,7 @@
   "description": "A simple API built with TS.",
   "main": "./build/server.js",
   "scripts": {
-    "start:dev": "nodemon ./build/server.js",
+    "start:dev": "nodemon",
     "start": "NODE_ENV=production node ./build/server.js",
     "tsc": "tsc",
     "tsc:watch": "tsc --watch",

@@ -53,7 +53,6 @@ export class App {
    * @method config
    */
   public config(): void {
-    console.log('configure app');
     // use json form parser middlware
     this.app.use(bodyParser.json());
 
@@ -64,7 +63,7 @@ export class App {
       }),
     );
 
-    this.app.use( swagger.express(
+    this.app.use(swagger.express(
       {
           definition : {
             externalDocs : {
@@ -76,7 +75,7 @@ export class App {
             }
           }
       }
-    ) );
+    ));
   }
 
   /**
