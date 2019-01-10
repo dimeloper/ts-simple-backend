@@ -33,13 +33,6 @@ if (
     }
   );
 } else {
-  const databaseUrl: string =
-    process.env.MONGO_HOSTS != null
-      ? process.env.MONGO_HOSTS
-      : 'swat-mongo.website.svc.cluster.local:27017';
-
-  console.log('databaseUrl:', databaseUrl);
-
   const MONGODB_CONNECTION_URL: string = `mongodb://<username>:<password>@<databaseUrl>/<databaseName>`;
 
   mongoose.connect(

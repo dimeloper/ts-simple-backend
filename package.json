@@ -17,11 +17,15 @@
   "author": "dimitris.kir <dimitrios.kiriakakis@esailors.de>",
   "license": "MIT",
   "dependencies": {
+    "@types/swagger-jsdoc": "^0.0.2",
     "body-parser": "^1.18.3",
     "cors": "^2.8.5",
     "express": "^4.16.4",
     "mockgoose-fix": "^7.3.6",
-    "mongoose": "^5.3.13"
+    "mongoose": "^5.3.13",
+    "reflect-metadata": "^0.1.12",
+    "swagger-express-ts": "^1.0.1",
+    "swagger-ui-dist": "^3.20.4"
   },
   "devDependencies": {
     "@types/chai": "^4.1.7",
