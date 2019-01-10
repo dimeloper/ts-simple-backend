@@ -9,8 +9,12 @@ export class UserController {
 
       response.json(users);
     }).post('/', async (request: Request, response: Response) => {
-
-      const user = await UserModel.create(request.body);
+      let user = null;
+      try {
+        user = await UserModel.create(request.body);
+      } catch (e) {
+        console.error(e);
+      }
 
       response.status(200).json(user);
     });

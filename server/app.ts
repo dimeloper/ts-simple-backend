@@ -1,3 +1,4 @@
+import bodyParser from 'body-parser';
 import express from 'express';
 import HealthController from './controllers/health.controller';
 import UserController from './controllers/user.controller';
@@ -46,6 +47,15 @@ export class App {
    */
   public config(): void {
     console.log('configure app');
+    // use json form parser middlware
+    this.app.use(bodyParser.json());
+
+    // use query string parser middlware
+    this.app.use(
+      bodyParser.urlencoded({
+        extended: false,
+      }),
+    );
   }
 
   /**
@@ -56,7 +66,7 @@ export class App {
    */
   public routes(): void {
     this.app.use('/health', HealthController.routes());
-    this.app.use('/users', UserController.routes());
+    this.app.use('/api/users', UserController.routes());
   }
 }
 
