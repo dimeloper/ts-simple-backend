@@ -1,7 +1,8 @@
-import { Document, Model, Schema } from 'mongoose';
+import { Schema } from 'mongoose';
 import {ApiModel, ApiModelProperty} from 'swagger-express-ts';
 import mongoose from '../config/database';
-export interface IUser extends Document {
+export interface IUser {
+  _id?: string;
   email: string;
   password: string;
 }
@@ -10,22 +11,22 @@ export interface IUser extends Document {
   description : 'User Model',
   name : 'User'
 })
-export class UserModel {
+export class UserModel implements IUser {
   /* tslint:disable */
-  private _id? : string;
+  public _id? : string;
   /* tslint:enable */
   @ApiModelProperty({
     description : 'email of user',
     example: ['email@test.com'],
     required : true,
   })
-  private email: string;
+  public email: string;
 
   @ApiModelProperty( {
     description : 'password of user',
     required : true
   })
-  private password: string;
+  public password: string;
 
 }
 

@@ -85,9 +85,9 @@ export class App {
    * @method errorConfig
    */
   public errorConfig(): void {
-    this.app.use( ( err: Error , request: express.Request , response: express.Response , next: express.NextFunction ) => {
-      console.error( err.stack );
-      response.status( 500 ).send( 'Something broke!' );
+    this.app.use((err: Error, request: express.Request, response: express.Response, next: express.NextFunction) => {
+      console.error(err.stack);
+      response.status(500).send('Something broke!');
   } );
   }
 

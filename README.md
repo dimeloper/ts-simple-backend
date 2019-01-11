@@ -5,9 +5,11 @@ This repo is a simple express API which can be used as a starter project for bui
 ## Starting the dev server
 
 First you have to install the necessary dependencies.
+
 ```yarn install```
 
 Then you can start the development server.
+
 ```yarn start:dev```
 
 We are using Nodemon to watch for changes in the ts files and restart the server once we detect a change.
@@ -37,9 +39,11 @@ You can configure your own prod database by changing the value for MONGODB_CONNE
 ## Running the server in production
 
 Linting, testing and building the server:
+
 ```yarn prod```
 
 Starting the production server:
+
 ```yarn start```
 
 # For any questions, suggestions, or feature requests
