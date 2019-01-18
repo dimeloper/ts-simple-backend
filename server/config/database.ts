@@ -2,7 +2,7 @@ import { Mockgoose } from 'mockgoose-fix';
 
 /* es6 import breaks mongoose */
 /* tslint:disable */
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 /* tslint:enable */
 
 (mongoose as any).Promise = global.Promise;

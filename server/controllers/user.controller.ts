@@ -1,12 +1,8 @@
 import * as express from 'express';
 import 'reflect-metadata';
-import {
-  ApiOperationGet,
-  ApiOperationPost,
-  ApiPath,
-  SwaggerDefinitionConstant,
-} from 'swagger-express-ts';
+import { ApiOperationGet, ApiOperationPost, ApiPath, SwaggerDefinitionConstant, } from 'swagger-express-ts';
 import UserModel from '../models/user.model';
+
 @ApiPath({
   description: 'User Controller',
   name: 'User Controller',
@@ -30,10 +26,10 @@ export class UserController {
   @ApiOperationGet({
     description: 'Get user list',
     responses: {
-        200: {
-            model: 'User',
-            type: SwaggerDefinitionConstant.Response.Type.ARRAY,
-        },
+      200: {
+        model: 'User',
+        type: SwaggerDefinitionConstant.Response.Type.ARRAY,
+      },
     },
     /* security: { - use if route is protected
       apiKeyHeader: [],
@@ -44,24 +40,24 @@ export class UserController {
     request: express.Request,
     response: express.Response
   ): Promise<void> {
-      const users = await UserModel.find({}).exec();
-      response.status(200).json(users);
+    const users = await UserModel.find({}).exec();
+    response.status(200).json(users);
   }
 
   @ApiOperationPost({
     description: 'Post user object',
     parameters: {
-        body: {
-            description: 'New user',
-            model: 'User',
-            required: true,
-        },
+      body: {
+        description: 'New user',
+        model: 'User',
+        required: true,
+      },
     },
     responses: {
-        200: {
-            model: 'User',
-        },
-        400: { description: 'Parameters fail' },
+      200: {
+        model: 'User',
+      },
+      400: { description: 'Parameters fail' },
     },
     /* security: { - use if route is protected
       apiKeyHeader: [],

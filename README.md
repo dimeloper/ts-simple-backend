@@ -22,7 +22,7 @@ The project contains mocha unit tests for the models and the controllers. When r
 
 Or you can inspect them in a browser window by running:
 
-```yarn:test:inspect```
+```yarn test:inspect```
 
 and accessing chrome://inspect on a chrome browser - a websocket connection will be available
 

@@ -1,6 +1,5 @@
 import bodyParser from 'body-parser';
 import express from 'express';
-import * as path from 'path';
 import * as swagger from 'swagger-express-ts';
 
 import HealthController from './controllers/health.controller';
@@ -65,15 +64,15 @@ export class App {
 
     this.app.use(swagger.express(
       {
-          definition : {
-            externalDocs : {
-              url : 'Typescript Seed URL'
-            },
-            info : {
-              title : 'Typescript Seed API' ,
-              version : '1.0'
-            }
+        definition: {
+          externalDocs: {
+            url: 'Typescript Seed URL'
+          },
+          info: {
+            title: 'Typescript Seed API',
+            version: '1.0'
           }
+        }
       }
     ));
   }
@@ -88,7 +87,7 @@ export class App {
     this.app.use((err: Error, request: express.Request, response: express.Response, next: express.NextFunction) => {
       console.error(err.stack);
       response.status(500).send('Something broke!');
-  } );
+    });
   }
 
   /**
@@ -102,7 +101,7 @@ export class App {
     this.app.use('/api/users', new UserController().getRouter());
 
     // Docs
-    this.app.use('/api-docs/swagger', express.static('server/assets/swagger') );
+    this.app.use('/api-docs/swagger', express.static('server/assets/swagger'));
     this.app.use('/api-docs/swagger/assets', express.static('node_modules/swagger-ui-dist'));
   }
 }

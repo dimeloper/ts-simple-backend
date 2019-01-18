@@ -1,19 +1,85 @@
 {
   "defaultSeverity": "error",
-  "extends": ["tslint:recommended"],
+  "extends": [
+    "tslint:recommended"
+  ],
   "jsRules": {},
   "rules": {
-    "arrow-parens": [true, "ban-single-arg-parens"],
-    "ban-types": [true, ["Object", "Use {} instead."], ["String", "Use string instead."]],
-    "max-line-length": [true, 250],
-    "no-console": [true, "debug", "info", "time", "timeEnd", "trace"],
-    "one-line": [true, "check-open-brace", "check-catch", "check-else", "check-finally"],
-    "quotemark": [true, "single", "avoid-escape"],
-    "semicolon": [true, "always", "ignore-bound-class-methods"],
+    "arrow-parens": [
+      true,
+      "ban-single-arg-parens"
+    ],
+    "ban-types": [
+      true,
+      [
+        "Object",
+        "Use {} instead."
+      ],
+      [
+        "String",
+        "Use string instead."
+      ]
+    ],
+    "indent": [
+      true,
+      "spaces"
+    ],
+    "ter-indent": [
+      true,
+      2
+    ],
+    "max-line-length": [
+      true,
+      250
+    ],
+    "no-console": [
+      true,
+      "debug",
+      "info",
+      "time",
+      "timeEnd",
+      "trace"
+    ],
+    "one-line": [
+      true,
+      "check-open-brace",
+      "check-catch",
+      "check-else",
+      "check-finally"
+    ],
+    "quotemark": [
+      true,
+      "single",
+      "avoid-escape"
+    ],
+    "semicolon": [
+      true,
+      "always",
+      "ignore-bound-class-methods"
+    ],
     "trailing-comma": true,
-    "triple-equals": [true, "allow-null-check", "allow-undefined-check"],
-    "typedef": [true, "call-signature", "parameter", "property-declaration", "member-variable-declaration"],
-    "whitespace": [true, "check-branch", "check-operator", "check-typecast", "check-type", "check-separator"]
+    "triple-equals": [
+      true,
+      "allow-null-check",
+      "allow-undefined-check"
+    ],
+    "typedef": [
+      true,
+      "call-signature",
+      "parameter",
+      "property-declaration",
+      "member-variable-declaration"
+    ],
+    "whitespace": [
+      true,
+      "check-branch",
+      "check-operator",
+      "check-typecast",
+      "check-type",
+      "check-separator"
+    ]
   },
-  "rulesDirectory": []
+  "rulesDirectory": [
+    "node_modules/tslint-eslint-rules/dist/rules"
+  ]
 }
