@@ -48,11 +48,11 @@ Starting the production server:
 
 # For any questions, suggestions, or feature requests
 
-[Please file an issue](https://github.com/dkiriakakis/dkiriakakis/ts-simple-backend/issues)!
+[Please file an issue](https://github.com/dimeloper/ts-simple-backend/issues)!
 
 Or get in touch with me:
 - [Kiriakakis.com](https://kiriakakis.com)
-- [Instagram Profile](https://instagram.com/dimitris.kiriakakis)
+- [Instagram Profile](https://instagram.com/dimeloper_)
 
 ## License
 
