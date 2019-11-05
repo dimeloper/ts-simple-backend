@@ -22,7 +22,7 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "mockgoose-fix": "^7.3.6",
-    "mongoose": "^5.6.11",
+    "mongoose": "^5.7.5",
     "reflect-metadata": "^0.1.13",
     "swagger-express-ts": "^1.0.1",
     "swagger-ui-dist": "^3.23.7"
