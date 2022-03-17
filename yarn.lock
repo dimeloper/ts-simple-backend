@@ -3040,10 +3040,10 @@ swagger-express-ts@^1.0.1:
   resolved "https://registry.yarnpkg.com/swagger-express-ts/-/swagger-express-ts-1.0.1.tgz#53a7dc87db3a9e219a9932e15eb81e85fce4e491"
   integrity sha512-zNEslZ1Cp/+mXa6EjChJEQuZzoRiRkK5n4VTlz2vNM9eeAfzO4WcgRs+DLPH9SB2Ht1zP7b3dAJqx/69US4nzA==
 
-swagger-ui-dist@^3.23.7:
-  version "3.23.7"
-  resolved "https://registry.yarnpkg.com/swagger-ui-dist/-/swagger-ui-dist-3.23.7.tgz#93877c787fa91d3871fb06b612069088bb4b90e5"
-  integrity sha512-uU7GqkCb/mVvZgjkoiyhRoSSH3MP24IdbR4/2oZlUm17nNs0kHcpcvEPv+hi/p+eL93BAP8MOWClZcQSRNZXVg==
+swagger-ui-dist@^4.1.3:
+  version "4.1.3"
+  resolved "https://registry.yarnpkg.com/swagger-ui-dist/-/swagger-ui-dist-4.1.3.tgz#2be9f9de9b5c19132fa4a5e40933058c151563dc"
+  integrity sha512-WvfPSfAAMlE/sKS6YkW47nX/hA7StmhYnAHc6wWCXNL0oclwLj6UXv0hQCkLnDgvebi0MEV40SJJpVjKUgH1IQ==
 
 tar-stream@^1.5.2:
   version "1.6.2"
